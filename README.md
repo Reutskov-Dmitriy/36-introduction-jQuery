@@ -1,0 +1,1 @@
+[Game-info](https://www.figma.com/file/eXohHK5R4ighVZFOPjW9wU/introduction_jQuery)
