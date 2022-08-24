@@ -143,14 +143,61 @@ main{
 		
 }
 .rating {
+	display: flex;
+	justify-content: center;
 	margin-top: 25px;
 	border: none;
 		&__group {
+			position: relative;
+			width: 100px;
+			height: 2em;
+			background: url(../../assets/images/icons/star-icon-inactive.svg) repeat-x;
 		}
 
 		&__star {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 2em;
+			font-size: inherit;
+			appearance: none;
+			-webkit-appearance: none; 
+			-moz-appearance: none; 
+			&:checked,
+			&:hover{
+				background: url(../../assets/images/icons/star-icon.svg) repeat-x;
+				font-size: inherit;
+				
+			}
+			&:nth-of-type(1){
+				z-index: 5;
+				width: 20px;
+			}
+			&:nth-of-type(2){
+				z-index: 4;
+				width: 40px;
+			}
+			&:nth-of-type(3){
+				z-index: 3;
+				width: 60px;
+			}
+			&:nth-of-type(4){
+				z-index: 2;
+				width: 80px;
+			}
+			&:nth-of-type(5){
+				z-index: 1;
+				width: 100px;
+			}
+		
+		}
+		&__focus{
+
 		}
 }
+
 .tobuy {
 	width: 306px;
 	height: 60px;
