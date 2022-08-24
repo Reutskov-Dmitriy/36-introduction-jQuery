@@ -6,19 +6,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<script defer src="#source/js/jquery-3.6.0.min.js"></script>
-	<script defer src="#source/js/script.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
 	<title>Game info</title>
 </head>
 
 <body>
 	<main>
+		<button class="btn-toggle">FarCry 6</button>
 		<div class="wrapp wrapp--gradient">
 			<section class="game-info">
 				<ul class="game-info__nav nav">
 					<li class="nav__group">
-						<a class="nav__link" href="#">
-							<svg class="nav__icon">
+						<a id="start-link" class="nav__link" href="#">
+							<svg id="start-icon" class="nav__icon">
 								<use xlink:href="assets/images/sprite.svg#icon-info"></use>
 							</svg>Information
 						</a>

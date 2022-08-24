@@ -85,6 +85,7 @@ h6 {
 }
 body {
   font-family: "Lato-Regular", sans-serif;
+  background-color: #2B3040;
 }
 
 main {
@@ -92,6 +93,18 @@ main {
   max-width: 100vw;
   max-height: 1024px;
   padding: 82px 0;
+}
+
+.btn-toggle {
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  background-color: #B7BACD;
+  color: #212534;
+  cursor: pointer;
 }
 
 .wrapp {
@@ -102,7 +115,7 @@ main {
   background: url(/assets/images/bg.png) 0 0/cover no-repeat;
 }
 
-.wrapp--gradient::after {
+.wrapp--gradient::before {
   content: "";
   position: absolute;
   top: 0;
