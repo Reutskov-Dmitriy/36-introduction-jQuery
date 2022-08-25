@@ -19,7 +19,8 @@ $(function () {
 // Slider
 let offset = 0; // left offset
 const sliderLine = document.querySelector('.card__slider');
-showSlide()
+document.querySelector('.card__btnRight').addEventListener('click', offsetRight);
+
 
 function offsetRight() {
 	offset += 160;
@@ -27,7 +28,6 @@ function offsetRight() {
 	sliderLine.style.left = -offset + 'px';
 }
 
-document.querySelector('.card__btnRight').addEventListener('click', offsetRight);
 
 document.querySelector('.card__btnLeft').addEventListener('click', function () {
 	offset -= 160;
@@ -35,8 +35,11 @@ document.querySelector('.card__btnLeft').addEventListener('click', function () {
 	sliderLine.style.left = -offset + 'px';
 });
 
-function showSlide() {
-	for (let i = 0; i < 3; i += 1) {
-		offsetRight()
-	}
+setInterval(() => {
+	const sliderBtn = document.querySelector('.card__btn-slider')
+	if (sliderBtn.matches(':hover'))
+		return
+
+	offsetRight()
 }
+	, 3000);
