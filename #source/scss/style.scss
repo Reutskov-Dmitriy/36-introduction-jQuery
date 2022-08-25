@@ -13,10 +13,8 @@ main{
 	max-width: 100vw;
 	max-height: 1024px;
 	padding: 82px 0;
-
-	
-	
 }
+
 .btn-toggle{
 	width: 60px;
 	height: 40px;
@@ -44,8 +42,8 @@ main{
 	width: 100%;
 	height: 100%;
 	background-color: rgba(41, 45, 62, 0.8);
-	
 }
+
 .game-info {
 	position: absolute;
 	z-index: 2;
@@ -105,7 +103,11 @@ main{
 	}
 }
 
-
+.wrapper{
+	overflow: hidden;
+	width: 160px;
+	height: 230px;
+}
 
 .card {
 	padding: 60px 40px;
@@ -114,6 +116,33 @@ main{
 		&__pic {
 			width: 160px;
 			height: 275px;
+		}
+
+		&__slider{
+			width: 640px;
+			display: flex;
+			position: relative;
+			left: 0;
+			transition: all ease 1s;
+			
+			& img{
+				width: 160px;
+				height: 230px;
+				
+			}
+
+		}
+
+		&__btn-slider{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 10px;
+		}
+
+		&__btnLeft,
+		&__btnRight{
+			width: 20px;
+			color: $dark-blue;
 		}
 
 		&__content {
@@ -149,9 +178,9 @@ main{
 	border: none;
 		&__group {
 			position: relative;
-			width: 100px;
+			width: 120px;
 			height: 2em;
-			background: url(../../assets/images/icons/star-icon-inactive.svg) repeat-x;
+			background: url(../../assets/images/icons/star-icon-inactive.svg) space;
 		}
 
 		&__star {
@@ -159,37 +188,38 @@ main{
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 20px;
+			width: 24px;
 			height: 2em;
 			font-size: inherit;
 			appearance: none;
 			-webkit-appearance: none; 
 			-moz-appearance: none; 
 			&:checked,
-			&:hover{
-				background: url(../../assets/images/icons/star-icon.svg) repeat-x;
+			&:hover,
+			&:focus{
+				background: url(../../assets/images/icons/star-icon.svg) space;
 				font-size: inherit;
 				
 			}
 			&:nth-of-type(1){
 				z-index: 5;
-				width: 20px;
+				width: 24px;
 			}
 			&:nth-of-type(2){
 				z-index: 4;
-				width: 40px;
+				width: 48px;
 			}
 			&:nth-of-type(3){
 				z-index: 3;
-				width: 60px;
+				width: 72px;
 			}
 			&:nth-of-type(4){
 				z-index: 2;
-				width: 80px;
+				width: 96px;
 			}
 			&:nth-of-type(5){
 				z-index: 1;
-				width: 100px;
+				width: 120px;
 			}
 		
 		}
