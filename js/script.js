@@ -37,7 +37,7 @@ document.querySelector('.card__btnLeft').addEventListener('click', function () {
 
 setInterval(() => {
 	const sliderBtn = document.querySelector('.card__btn-slider')
-	if (sliderBtn.matches(':hover'))
+	if (sliderBtn.matches(':hover') || sliderLine.matches(':hover'))
 		return
 
 	offsetRight()
