@@ -84,8 +84,8 @@ main{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap:  15px;
-		font-size: 1em;
+		gap:  13px;
+		font-size: 16px;
 		line-height: 28px;
 		text-transform: uppercase;
 		&:hover{
@@ -196,7 +196,7 @@ main{
 			position: relative;
 			width: 120px;
 			height: 2em;
-			background: url(../../assets/images/icons/star-icon-inactive.svg) space;
+			background: url(../assets/images/icons/star-icon-inactive.svg) space;
 		}
 
 		&__star {
@@ -213,7 +213,7 @@ main{
 			&:checked,
 			&:hover,
 			&:focus{
-				background: url(../../assets/images/icons/star-icon.svg) space;
+				background: url(../assets/images/icons/star-icon.svg) space;
 				font-size: inherit;
 				
 			}
