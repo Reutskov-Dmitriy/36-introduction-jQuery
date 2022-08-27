@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script defer src="js/script.js"></script>
+	<title>Game info</title>
+</head>
+
+<body>
+	<main>
+		<button class="btn-toggle">FarCry 6</button>
+		<div class="wrapp wrapp--gradient">
+			<section class="game-info">
+				<ul class="game-info__nav nav">
+					<li class="nav__group">
+						<a id="start-link" class="nav__link" href="#">
+							<svg id="start-icon" class="nav__icon">
+								<use xlink:href="assets/images/sprite.svg#icon-info"></use>
+							</svg>Information
+						</a>
+					</li>
+
+					<li class="nav__group">
+						<a class="nav__link" href="#">
+							<svg class="nav__icon">
+								<use xlink:href="assets/images/sprite.svg#icon-spades"></use>
+							</svg>Ratings Info
+						</a>
+					</li>
+
+					<li class="nav__group">
+						<a class="nav__link" href="#">
+							<svg class="nav__icon">
+								<use xlink:href="assets/images/sprite.svg#icon-bag"></use>
+							</svg>Where to buy
+						</a>
+					</li>
+				</ul>
+				<div class="game-info__card card">
+					<figure class="card__pic">
+						<div class="wrapper">
+							<div class="card__slider">
+								<img src="assets/images/pic/FarCry.png" alt="FarCry 6">
+								<img src="assets/images/pic/fc6_strangerthings.jpg" alt="Stranger things">
+								<img src="assets/images/pic/rambo_poster.jpg" alt="Rambo poster">
+								<img src="assets/images/pic/FC6_Missions.jpg" alt="Missions">
+							</div>
+						</div>
+						<div class="card__btn-slider">
+							<button class="card__btnLeft">&lt</button>
+							<button class="card__btnRight">&gt</button>
+						</div>
+						<fieldset class="rating">
+							<div class="rating__group">
+								<input class="rating__star" name="like" type="radio" value="1">
+								<input class="rating__star" name="like" type="radio" value="2">
+								<input class="rating__star" name="like" type="radio" value="3">
+								<input class="rating__star" name="like" type="radio" value="4">
+								<input class="rating__star" name="like" type="radio" value="5">
+								<div class="rating__focus"></div>
+							</div>
+						</fieldset>
+					</figure>
+					<div class="card__content">
+						<h2 class="card__description">FarCry 6</h2>
+						<div class="card__score"></div>
+						<p class="card__released">First Released Oct 6, 2021</p>
+						<p class="card__text">Far Cry 6 is a 2021 action-adventure first-person shooter game developed by
+							Ubisoft Toronto. It is
+							the sixth main installment in the Far Cry series and the successor Far Cry 5.
+						</p>
+						<div class="tobuy">
+							<div>
+								<p class="tobuy__sale">20% off!</p>
+								<p class="tobuy__price">$59.96</p>
+							</div>
+							<button class="tobuy__btn btn">buy it now</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+</body>
+
+</html>

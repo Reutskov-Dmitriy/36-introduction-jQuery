@@ -1,0 +1,270 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+
+body{
+	font-family: $font-lr;
+	background-color: $dark-blue;
+}
+
+main{
+
+	background-color: $dark-blue;
+	max-width: 100%;
+	max-height: 1024px;
+	padding: 8vh 0;
+}
+
+.btn-toggle{
+	width: 60px;
+	height: 40px;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 9;
+	top: 3%;
+	left: 3%;
+	background-color: $gray-light;
+	color: $deep-blue;
+	cursor: pointer;
+}
+.wrapp {
+	position: relative;
+	margin: auto;
+	max-width: 1000px;
+	height: 860px;
+	background: url(../assets/images/bg.png)0 0/cover no-repeat ;
+
+}
+.wrapp--gradient::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(41, 45, 62, 0.8);
+}
+
+.game-info {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 600px;
+	max-height: 552px;
+
+		&__nav {
+			max-width: 100%;
+			height: 120px;;
+			background-color: $dark-blue;
+		}
+
+		&__card {
+			max-width: 100%;
+			height: 432px;
+			background-color: $deep-blue;
+		}
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 70px;
+
+	&__group {
+		width: 123px;
+		height: 64px;
+	}
+
+	&__link {
+		height: 100%;
+		color: $inactive;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap:  15px;
+		font-size: 16px;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		stroke: $inactive;
+		stroke-width: 1px;
+		stroke-linecap: "round";
+		fill: none;
+	}
+}
+
+.wrapper{
+	overflow: hidden;
+	width: 160px;
+	height: 230px;
+}
+
+.card {
+	padding: 60px 40px;
+	display: flex;
+	gap: 40px;
+		&__pic {
+			width: 160px;
+			height: 275px;
+		}
+
+		&__slider{
+			width: 640px;
+			display: flex;
+			position: relative;
+			left: 0;
+			cursor: pointer;
+			transition: all ease 1s;
+			
+			& img{
+				width: 160px;
+				height: 230px;
+				object-fit: contain;
+			}
+
+		}
+
+		&__btn-slider{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 10px;
+		}
+
+		&__btnLeft,
+		&__btnRight{
+			width: 20px;
+			color: $dark-blue;
+		}
+
+		&__content {
+			width: 319px;
+			height: 312px;
+		}
+
+		&__description {
+			font-size: 32px;
+			line-height: 32px;
+			color: $white;
+		}
+
+		&__score {
+			
+		}
+
+		&__released {
+			margin-top: 15px;
+			color: $white;
+		}
+		&__text{
+			width: 277px;
+			margin-top: 40px;
+			color: $gray-light;
+		}
+		
+}
+
+@media (max-width: 450px) {
+	.card{
+		flex-direction: column;
+		text-align: center;
+
+		&__pic{
+			text-align: center;
+		}
+	}
+}
+
+.rating {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	border: none;
+		&__group {
+			position: relative;
+			width: 120px;
+			height: 2em;
+			background: url(../assets/images/icons/star-icon-inactive.svg) space;
+		}
+
+		&__star {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 2em;
+			font-size: inherit;
+			appearance: none;
+			-webkit-appearance: none; 
+			-moz-appearance: none; 
+			&:checked,
+			&:hover,
+			&:focus{
+				background: url(../assets/images/icons/star-icon.svg) space;
+				font-size: inherit;
+				
+			}
+			&:nth-of-type(1){
+				z-index: 5;
+				width: 24px;
+			}
+			&:nth-of-type(2){
+				z-index: 4;
+				width: 48px;
+			}
+			&:nth-of-type(3){
+				z-index: 3;
+				width: 72px;
+			}
+			&:nth-of-type(4){
+				z-index: 2;
+				width: 96px;
+			}
+			&:nth-of-type(5){
+				z-index: 1;
+				width: 120px;
+			}
+		
+		}
+		&__focus{
+
+		}
+}
+
+.tobuy {
+	width: 306px;
+	height: 60px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	&__sale{
+		font-size: 12px;
+		color: $yellow;
+	}
+	&__price{
+		font-size: 32px;
+		line-height: 32px;
+		color: $white;
+	}
+	&__btn{
+		width: 155px;
+		height: 100%;
+		border: none;
+		border-radius: 2px;
+		background-color: $green;
+		color: $white;
+		font-size: 16px;
+		text-transform: uppercase;
+
+		&:hover{
+			box-shadow: 5px 5px 5px $white;
+		}
+	}
+}
