@@ -14,6 +14,14 @@ $(function () {
 		$(this).find('.nav__icon').css({ 'stroke': 'white' })
 		$(this).css({ 'color': 'white' })
 	})
+	$('.nav__group a').mouseover(function () {
+		$(this).find('.nav__icon').css({ 'stroke': 'white' })
+		$(this).css({ 'color': 'white' })
+	})
+	$('.nav__group a').mouseout(function () {
+		$(this).find('.nav__icon').css({ 'stroke': '#8D91A3' })
+		$(this).css({ 'color': '#8D91A3' })
+	})
 });
 
 // Slider

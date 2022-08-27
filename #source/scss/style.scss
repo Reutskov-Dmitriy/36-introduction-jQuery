@@ -88,9 +88,6 @@ main{
 		font-size: 16px;
 		line-height: 28px;
 		text-transform: uppercase;
-		&:hover{
-			color: $white;
-		}
 	}
 
 	&__icon {
@@ -100,9 +97,6 @@ main{
 		stroke-width: 1px;
 		stroke-linecap: "round";
 		fill: none;
-		&:hover{
-			stroke: $white;
-		}
 	}
 }
 

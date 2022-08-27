@@ -167,9 +167,6 @@ main {
   line-height: 28px;
   text-transform: uppercase;
 }
-.nav__link:hover {
-  color: #FFFFFF;
-}
 .nav__icon {
   width: 24px;
   height: 24px;
@@ -177,9 +174,6 @@ main {
   stroke-width: 1px;
   stroke-linecap: "round";
   fill: none;
-}
-.nav__icon:hover {
-  stroke: #FFFFFF;
 }
 
 .wrapper {
